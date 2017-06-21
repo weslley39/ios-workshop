@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63366EA289900B8CC0001ABC /* Pods_gestta2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F01EFF9C624AE443CAC871 /* Pods_gestta2.framework */; };
+		86AF038C0BA70966BED22E74 /* Pods_gestta2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45CFA7AD48248C33C0DB4FC /* Pods_gestta2UITests.framework */; };
+		8B9C00371EF9BCC0007C6E94 /* StringIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00361EF9BCC0007C6E94 /* StringIdentifier.swift */; };
+		8B9C00391EF9BCC0007C6E94 /* CollectionViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00381EF9BCC0007C6E94 /* CollectionViewIdentifier.swift */; };
+		8B9C003B1EF9BCC0007C6E94 /* ControllerIndentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C003A1EF9BCC0007C6E94 /* ControllerIndentifier.swift */; };
+		8B9C003D1EF9BCC0007C6E94 /* ImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C003C1EF9BCC0007C6E94 /* ImageIdentifier.swift */; };
+		8B9C003F1EF9BCC0007C6E94 /* NibIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C003E1EF9BCC0007C6E94 /* NibIdentifier.swift */; };
+		8B9C00411EF9BCC0007C6E94 /* TableViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00401EF9BCC0007C6E94 /* TableViewIdentifier.swift */; };
+		8B9C00431EF9BCC0007C6E94 /* UserDefaultsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00421EF9BCC0007C6E94 /* UserDefaultsIdentifiers.swift */; };
+		8B9C004C1EF9BCC0007C6E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C004A1EF9BCC0007C6E94 /* Main.storyboard */; };
+		8B9C00521EF9BCC0007C6E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00511EF9BCC0007C6E94 /* AppDelegate.swift */; };
+		8B9C00541EF9BCC0007C6E94 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C00531EF9BCC0007C6E94 /* AppConfig.plist */; };
+		8B9C00561EF9BCC0007C6E94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C00551EF9BCC0007C6E94 /* Localizable.strings */; };
+		8B9C00581EF9BCC0007C6E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C00571EF9BCC0007C6E94 /* Assets.xcassets */; };
+		8B9C005B1EF9BCC0007C6E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C00591EF9BCC0007C6E94 /* LaunchScreen.storyboard */; };
+		8B9C00661EF9BCC0007C6E94 /* gestta2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00651EF9BCC0007C6E94 /* gestta2Tests.swift */; };
+		8B9C00711EF9BCC0007C6E94 /* gestta2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C00701EF9BCC0007C6E94 /* gestta2UITests.swift */; };
+		8BC011C31EF9F43100821CC2 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC011C21EF9F43100821CC2 /* Company.swift */; };
+		8BC011C51EF9F5DC00821CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC011C41EF9F5DC00821CC2 /* User.swift */; };
+		8BF0664B1EF9C25C007EEF15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0664A1EF9C25C007EEF15 /* LoginViewController.swift */; };
+		8BF0664E1EF9C2E3007EEF15 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0664D1EF9C2E3007EEF15 /* Colors.swift */; };
+		8BF066551EF9C57D007EEF15 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF066521EF9C57D007EEF15 /* Roboto-Italic.ttf */; };
+		8BF066561EF9C57D007EEF15 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF066531EF9C57D007EEF15 /* Roboto-Medium.ttf */; };
+		8BF066571EF9C57D007EEF15 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF066541EF9C57D007EEF15 /* Roboto-Regular.ttf */; };
+		8BF066591EF9C7FD007EEF15 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF066581EF9C7FD007EEF15 /* Fonts.swift */; };
+		8BF0665B1EF9CB84007EEF15 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0665A1EF9CB84007EEF15 /* Style.swift */; };
+		9885A1ED0A8FE69C4C7F34C0 /* Pods_gestta2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E43F5AF34FD2F5B255F5BA6 /* Pods_gestta2Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B9C00621EF9BCC0007C6E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B9C00271EF9BCC0007C6E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9C002E1EF9BCC0007C6E94;
+			remoteInfo = gestta2;
+		};
+		8B9C006D1EF9BCC0007C6E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B9C00271EF9BCC0007C6E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9C002E1EF9BCC0007C6E94;
+			remoteInfo = gestta2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E5EBBEC8ADD5FDBD1237EF /* Pods-gestta2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2Tests/Pods-gestta2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40F01EFF9C624AE443CAC871 /* Pods_gestta2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gestta2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E43F5AF34FD2F5B255F5BA6 /* Pods_gestta2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gestta2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656805C19175A97675E57CF7 /* Pods-gestta2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2Tests/Pods-gestta2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		808ECEDF84545CA0E1640099 /* Pods-gestta2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2UITests/Pods-gestta2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87760E373FD506895BA947D2 /* Pods-gestta2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2/Pods-gestta2.debug.xcconfig"; sourceTree = "<group>"; };
+		8B9C002F1EF9BCC0007C6E94 /* gestta2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestta2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C00361EF9BCC0007C6E94 /* StringIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIdentifier.swift; sourceTree = "<group>"; };
+		8B9C00381EF9BCC0007C6E94 /* CollectionViewIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewIdentifier.swift; sourceTree = "<group>"; };
+		8B9C003A1EF9BCC0007C6E94 /* ControllerIndentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerIndentifier.swift; sourceTree = "<group>"; };
+		8B9C003C1EF9BCC0007C6E94 /* ImageIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIdentifier.swift; sourceTree = "<group>"; };
+		8B9C003E1EF9BCC0007C6E94 /* NibIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibIdentifier.swift; sourceTree = "<group>"; };
+		8B9C00401EF9BCC0007C6E94 /* TableViewIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIdentifier.swift; sourceTree = "<group>"; };
+		8B9C00421EF9BCC0007C6E94 /* UserDefaultsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsIdentifiers.swift; sourceTree = "<group>"; };
+		8B9C004B1EF9BCC0007C6E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B9C00511EF9BCC0007C6E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B9C00531EF9BCC0007C6E94 /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
+		8B9C00551EF9BCC0007C6E94 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8B9C00571EF9BCC0007C6E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B9C005A1EF9BCC0007C6E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B9C005C1EF9BCC0007C6E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B9C00611EF9BCC0007C6E94 /* gestta2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gestta2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C00651EF9BCC0007C6E94 /* gestta2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestta2Tests.swift; sourceTree = "<group>"; };
+		8B9C00671EF9BCC0007C6E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B9C006C1EF9BCC0007C6E94 /* gestta2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gestta2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C00701EF9BCC0007C6E94 /* gestta2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestta2UITests.swift; sourceTree = "<group>"; };
+		8B9C00721EF9BCC0007C6E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC011C21EF9F43100821CC2 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		8BC011C41EF9F5DC00821CC2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BF0664A1EF9C25C007EEF15 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8BF0664D1EF9C2E3007EEF15 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8BF066521EF9C57D007EEF15 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		8BF066531EF9C57D007EEF15 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8BF066541EF9C57D007EEF15 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8BF066581EF9C7FD007EEF15 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8BF0665A1EF9CB84007EEF15 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		B45CFA7AD48248C33C0DB4FC /* Pods_gestta2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gestta2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8949E7AC7C2D332CD6A6FA /* Pods-gestta2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2UITests/Pods-gestta2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F70F3A937E38301702B53C93 /* Pods-gestta2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta2.release.xcconfig"; path = "Pods/Target Support Files/Pods-gestta2/Pods-gestta2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B9C002C1EF9BCC0007C6E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63366EA289900B8CC0001ABC /* Pods_gestta2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C005E1EF9BCC0007C6E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9885A1ED0A8FE69C4C7F34C0 /* Pods_gestta2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C00691EF9BCC0007C6E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AF038C0BA70966BED22E74 /* Pods_gestta2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B99F5989955521EF37623F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F01EFF9C624AE443CAC871 /* Pods_gestta2.framework */,
+				5E43F5AF34FD2F5B255F5BA6 /* Pods_gestta2Tests.framework */,
+				B45CFA7AD48248C33C0DB4FC /* Pods_gestta2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A840572B7AAFCFE359BB49F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87760E373FD506895BA947D2 /* Pods-gestta2.debug.xcconfig */,
+				F70F3A937E38301702B53C93 /* Pods-gestta2.release.xcconfig */,
+				656805C19175A97675E57CF7 /* Pods-gestta2Tests.debug.xcconfig */,
+				05E5EBBEC8ADD5FDBD1237EF /* Pods-gestta2Tests.release.xcconfig */,
+				808ECEDF84545CA0E1640099 /* Pods-gestta2UITests.debug.xcconfig */,
+				EA8949E7AC7C2D332CD6A6FA /* Pods-gestta2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B9C00261EF9BCC0007C6E94 = {
+			isa = PBXGroup;
+			children = (
+				8B9C00311EF9BCC0007C6E94 /* gestta2 */,
+				8B9C00641EF9BCC0007C6E94 /* gestta2Tests */,
+				8B9C006F1EF9BCC0007C6E94 /* gestta2UITests */,
+				8B9C00301EF9BCC0007C6E94 /* Products */,
+				3A840572B7AAFCFE359BB49F /* Pods */,
+				0B99F5989955521EF37623F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B9C00301EF9BCC0007C6E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C002F1EF9BCC0007C6E94 /* gestta2.app */,
+				8B9C00611EF9BCC0007C6E94 /* gestta2Tests.xctest */,
+				8B9C006C1EF9BCC0007C6E94 /* gestta2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9C00311EF9BCC0007C6E94 /* gestta2 */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00341EF9BCC0007C6E94 /* Models */,
+				8B9C00441EF9BCC0007C6E94 /* Controllers */,
+				8B9C00481EF9BCC0007C6E94 /* Views */,
+				8B9C004D1EF9BCC0007C6E94 /* Resources */,
+				8B9C00501EF9BCC0007C6E94 /* Support Files */,
+			);
+			path = gestta2;
+			sourceTree = "<group>";
+		};
+		8B9C00341EF9BCC0007C6E94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BC011C11EF9F3D400821CC2 /* Database */,
+				8B9C00351EF9BCC0007C6E94 /* Assets Custom Identifiers */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8B9C00351EF9BCC0007C6E94 /* Assets Custom Identifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00361EF9BCC0007C6E94 /* StringIdentifier.swift */,
+				8B9C00381EF9BCC0007C6E94 /* CollectionViewIdentifier.swift */,
+				8B9C003A1EF9BCC0007C6E94 /* ControllerIndentifier.swift */,
+				8B9C003C1EF9BCC0007C6E94 /* ImageIdentifier.swift */,
+				8B9C003E1EF9BCC0007C6E94 /* NibIdentifier.swift */,
+				8B9C00401EF9BCC0007C6E94 /* TableViewIdentifier.swift */,
+				8B9C00421EF9BCC0007C6E94 /* UserDefaultsIdentifiers.swift */,
+			);
+			name = "Assets Custom Identifiers";
+			sourceTree = "<group>";
+		};
+		8B9C00441EF9BCC0007C6E94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00451EF9BCC0007C6E94 /* Login */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8B9C00451EF9BCC0007C6E94 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0664A1EF9C25C007EEF15 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		8B9C00481EF9BCC0007C6E94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00491EF9BCC0007C6E94 /* Storyboards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8B9C00491EF9BCC0007C6E94 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00591EF9BCC0007C6E94 /* LaunchScreen.storyboard */,
+				8B9C004A1EF9BCC0007C6E94 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8B9C004D1EF9BCC0007C6E94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BF066511EF9C548007EEF15 /* Fonts */,
+				8BF0664C1EF9C2D1007EEF15 /* Styles */,
+				8B9C00571EF9BCC0007C6E94 /* Assets.xcassets */,
+				8BF0665A1EF9CB84007EEF15 /* Style.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B9C00501EF9BCC0007C6E94 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C005C1EF9BCC0007C6E94 /* Info.plist */,
+				8B9C00511EF9BCC0007C6E94 /* AppDelegate.swift */,
+				8B9C00531EF9BCC0007C6E94 /* AppConfig.plist */,
+				8B9C00551EF9BCC0007C6E94 /* Localizable.strings */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		8B9C00641EF9BCC0007C6E94 /* gestta2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00651EF9BCC0007C6E94 /* gestta2Tests.swift */,
+				8B9C00671EF9BCC0007C6E94 /* Info.plist */,
+			);
+			path = gestta2Tests;
+			sourceTree = "<group>";
+		};
+		8B9C006F1EF9BCC0007C6E94 /* gestta2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C00701EF9BCC0007C6E94 /* gestta2UITests.swift */,
+				8B9C00721EF9BCC0007C6E94 /* Info.plist */,
+			);
+			path = gestta2UITests;
+			sourceTree = "<group>";
+		};
+		8BC011C11EF9F3D400821CC2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8BC011C21EF9F43100821CC2 /* Company.swift */,
+				8BC011C41EF9F5DC00821CC2 /* User.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		8BF0664C1EF9C2D1007EEF15 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0664D1EF9C2E3007EEF15 /* Colors.swift */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		8BF066511EF9C548007EEF15 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8BF066521EF9C57D007EEF15 /* Roboto-Italic.ttf */,
+				8BF066531EF9C57D007EEF15 /* Roboto-Medium.ttf */,
+				8BF066541EF9C57D007EEF15 /* Roboto-Regular.ttf */,
+				8BF066581EF9C7FD007EEF15 /* Fonts.swift */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B9C002E1EF9BCC0007C6E94 /* gestta2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B9C00751EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2" */;
+			buildPhases = (
+				B7584032799F395C3F196D16 /* [CP] Check Pods Manifest.lock */,
+				8B9C002B1EF9BCC0007C6E94 /* Sources */,
+				8B9C002C1EF9BCC0007C6E94 /* Frameworks */,
+				8B9C002D1EF9BCC0007C6E94 /* Resources */,
+				A1E0382BF6B17A8C02D7C26D /* [CP] Embed Pods Frameworks */,
+				0CE33CB6B749A061A2F27079 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gestta2;
+			productName = gestta2;
+			productReference = 8B9C002F1EF9BCC0007C6E94 /* gestta2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B9C00601EF9BCC0007C6E94 /* gestta2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B9C00781EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2Tests" */;
+			buildPhases = (
+				735C5386B12D8BAE1F89979C /* [CP] Check Pods Manifest.lock */,
+				8B9C005D1EF9BCC0007C6E94 /* Sources */,
+				8B9C005E1EF9BCC0007C6E94 /* Frameworks */,
+				8B9C005F1EF9BCC0007C6E94 /* Resources */,
+				CEE9DED380567D19D3BAE5E0 /* [CP] Embed Pods Frameworks */,
+				58C4686EC20BB3312DAEB02B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B9C00631EF9BCC0007C6E94 /* PBXTargetDependency */,
+			);
+			name = gestta2Tests;
+			productName = gestta2Tests;
+			productReference = 8B9C00611EF9BCC0007C6E94 /* gestta2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B9C006B1EF9BCC0007C6E94 /* gestta2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B9C007B1EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2UITests" */;
+			buildPhases = (
+				C87DE4A3DC854A3E51DCB157 /* [CP] Check Pods Manifest.lock */,
+				8B9C00681EF9BCC0007C6E94 /* Sources */,
+				8B9C00691EF9BCC0007C6E94 /* Frameworks */,
+				8B9C006A1EF9BCC0007C6E94 /* Resources */,
+				C19613B9280D2F4E65B7795F /* [CP] Embed Pods Frameworks */,
+				5AC8E25DFEE43BC7A9633206 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B9C006E1EF9BCC0007C6E94 /* PBXTargetDependency */,
+			);
+			name = gestta2UITests;
+			productName = gestta2UITests;
+			productReference = 8B9C006C1EF9BCC0007C6E94 /* gestta2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B9C00271EF9BCC0007C6E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Weslley Neri";
+				TargetAttributes = {
+					8B9C002E1EF9BCC0007C6E94 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8B9C00601EF9BCC0007C6E94 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B9C002E1EF9BCC0007C6E94;
+					};
+					8B9C006B1EF9BCC0007C6E94 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B9C002E1EF9BCC0007C6E94;
+					};
+				};
+			};
+			buildConfigurationList = 8B9C002A1EF9BCC0007C6E94 /* Build configuration list for PBXProject "gestta2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B9C00261EF9BCC0007C6E94;
+			productRefGroup = 8B9C00301EF9BCC0007C6E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B9C002E1EF9BCC0007C6E94 /* gestta2 */,
+				8B9C00601EF9BCC0007C6E94 /* gestta2Tests */,
+				8B9C006B1EF9BCC0007C6E94 /* gestta2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B9C002D1EF9BCC0007C6E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9C00561EF9BCC0007C6E94 /* Localizable.strings in Resources */,
+				8BF066551EF9C57D007EEF15 /* Roboto-Italic.ttf in Resources */,
+				8BF066571EF9C57D007EEF15 /* Roboto-Regular.ttf in Resources */,
+				8B9C00541EF9BCC0007C6E94 /* AppConfig.plist in Resources */,
+				8BF066561EF9C57D007EEF15 /* Roboto-Medium.ttf in Resources */,
+				8B9C005B1EF9BCC0007C6E94 /* LaunchScreen.storyboard in Resources */,
+				8B9C00581EF9BCC0007C6E94 /* Assets.xcassets in Resources */,
+				8B9C004C1EF9BCC0007C6E94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C005F1EF9BCC0007C6E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C006A1EF9BCC0007C6E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE33CB6B749A061A2F27079 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2/Pods-gestta2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C4686EC20BB3312DAEB02B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2Tests/Pods-gestta2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC8E25DFEE43BC7A9633206 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2UITests/Pods-gestta2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735C5386B12D8BAE1F89979C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E0382BF6B17A8C02D7C26D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2/Pods-gestta2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7584032799F395C3F196D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C19613B9280D2F4E65B7795F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2UITests/Pods-gestta2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87DE4A3DC854A3E51DCB157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE9DED380567D19D3BAE5E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta2Tests/Pods-gestta2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B9C002B1EF9BCC0007C6E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF0664B1EF9C25C007EEF15 /* LoginViewController.swift in Sources */,
+				8BF0664E1EF9C2E3007EEF15 /* Colors.swift in Sources */,
+				8B9C00431EF9BCC0007C6E94 /* UserDefaultsIdentifiers.swift in Sources */,
+				8B9C00371EF9BCC0007C6E94 /* StringIdentifier.swift in Sources */,
+				8B9C00391EF9BCC0007C6E94 /* CollectionViewIdentifier.swift in Sources */,
+				8B9C00521EF9BCC0007C6E94 /* AppDelegate.swift in Sources */,
+				8BC011C51EF9F5DC00821CC2 /* User.swift in Sources */,
+				8B9C00411EF9BCC0007C6E94 /* TableViewIdentifier.swift in Sources */,
+				8BF0665B1EF9CB84007EEF15 /* Style.swift in Sources */,
+				8B9C003D1EF9BCC0007C6E94 /* ImageIdentifier.swift in Sources */,
+				8BF066591EF9C7FD007EEF15 /* Fonts.swift in Sources */,
+				8B9C003B1EF9BCC0007C6E94 /* ControllerIndentifier.swift in Sources */,
+				8BC011C31EF9F43100821CC2 /* Company.swift in Sources */,
+				8B9C003F1EF9BCC0007C6E94 /* NibIdentifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C005D1EF9BCC0007C6E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9C00661EF9BCC0007C6E94 /* gestta2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9C00681EF9BCC0007C6E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9C00711EF9BCC0007C6E94 /* gestta2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B9C00631EF9BCC0007C6E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B9C002E1EF9BCC0007C6E94 /* gestta2 */;
+			targetProxy = 8B9C00621EF9BCC0007C6E94 /* PBXContainerItemProxy */;
+		};
+		8B9C006E1EF9BCC0007C6E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B9C002E1EF9BCC0007C6E94 /* gestta2 */;
+			targetProxy = 8B9C006D1EF9BCC0007C6E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B9C004A1EF9BCC0007C6E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B9C004B1EF9BCC0007C6E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B9C00591EF9BCC0007C6E94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B9C005A1EF9BCC0007C6E94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B9C00731EF9BCC0007C6E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B9C00741EF9BCC0007C6E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B9C00761EF9BCC0007C6E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87760E373FD506895BA947D2 /* Pods-gestta2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gestta2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8B9C00771EF9BCC0007C6E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70F3A937E38301702B53C93 /* Pods-gestta2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gestta2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8B9C00791EF9BCC0007C6E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656805C19175A97675E57CF7 /* Pods-gestta2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gestta2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestta2.app/gestta2";
+			};
+			name = Debug;
+		};
+		8B9C007A1EF9BCC0007C6E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E5EBBEC8ADD5FDBD1237EF /* Pods-gestta2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gestta2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestta2.app/gestta2";
+			};
+			name = Release;
+		};
+		8B9C007C1EF9BCC0007C6E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808ECEDF84545CA0E1640099 /* Pods-gestta2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gestta2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gestta2;
+			};
+			name = Debug;
+		};
+		8B9C007D1EF9BCC0007C6E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8949E7AC7C2D332CD6A6FA /* Pods-gestta2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gestta2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weslleyneri.com.gestta2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gestta2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B9C002A1EF9BCC0007C6E94 /* Build configuration list for PBXProject "gestta2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9C00731EF9BCC0007C6E94 /* Debug */,
+				8B9C00741EF9BCC0007C6E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B9C00751EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9C00761EF9BCC0007C6E94 /* Debug */,
+				8B9C00771EF9BCC0007C6E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B9C00781EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9C00791EF9BCC0007C6E94 /* Debug */,
+				8B9C007A1EF9BCC0007C6E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B9C007B1EF9BCC0007C6E94 /* Build configuration list for PBXNativeTarget "gestta2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9C007C1EF9BCC0007C6E94 /* Debug */,
+				8B9C007D1EF9BCC0007C6E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B9C00271EF9BCC0007C6E94 /* Project object */;
+}
