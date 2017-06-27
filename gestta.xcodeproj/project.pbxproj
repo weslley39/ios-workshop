@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4546FC834A79DBF924779E5B /* Pods_gesttaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79F39CC462421AD644DB549 /* Pods_gesttaTests.framework */; };
+		59B90F1A1E5780485F968287 /* Pods_gesttaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D902E7E934F874C54AAD03 /* Pods_gesttaUITests.framework */; };
+		71B5BC398029A5DA97C4E0D8 /* Pods_gestta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934551E57CEFFBC3B85507EE /* Pods_gestta.framework */; };
+		AC0FC2751EF86AAA0045A80D /* StringIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2741EF86AAA0045A80D /* StringIdentifier.swift */; };
+		AC0FC2771EF86AAA0045A80D /* CollectionViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2761EF86AAA0045A80D /* CollectionViewIdentifier.swift */; };
+		AC0FC2791EF86AAA0045A80D /* ControllerIndentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2781EF86AAA0045A80D /* ControllerIndentifier.swift */; };
+		AC0FC27B1EF86AAA0045A80D /* ImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC27A1EF86AAA0045A80D /* ImageIdentifier.swift */; };
+		AC0FC27D1EF86AAA0045A80D /* NibIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC27C1EF86AAA0045A80D /* NibIdentifier.swift */; };
+		AC0FC27F1EF86AAA0045A80D /* TableViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC27E1EF86AAA0045A80D /* TableViewIdentifier.swift */; };
+		AC0FC2811EF86AAA0045A80D /* UserDefaultsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2801EF86AAA0045A80D /* UserDefaultsIdentifiers.swift */; };
+		AC0FC28A1EF86AAA0045A80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2881EF86AAA0045A80D /* Main.storyboard */; };
+		AC0FC2901EF86AAA0045A80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC28F1EF86AAA0045A80D /* AppDelegate.swift */; };
+		AC0FC2921EF86AAA0045A80D /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2911EF86AAA0045A80D /* AppConfig.plist */; };
+		AC0FC2941EF86AAA0045A80D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2931EF86AAA0045A80D /* Localizable.strings */; };
+		AC0FC2961EF86AAA0045A80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2951EF86AAA0045A80D /* Assets.xcassets */; };
+		AC0FC2991EF86AAA0045A80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2971EF86AAA0045A80D /* LaunchScreen.storyboard */; };
+		AC0FC2A41EF86AAA0045A80D /* gesttaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2A31EF86AAA0045A80D /* gesttaTests.swift */; };
+		AC0FC2AF1EF86AAA0045A80D /* gesttaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2AE1EF86AAA0045A80D /* gesttaUITests.swift */; };
+		AC0FC2BF1EF86B830045A80D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2BE1EF86B830045A80D /* LoginViewController.swift */; };
+		AC0FC2C21EF86CFC0045A80D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2C11EF86CFC0045A80D /* Color.swift */; };
+		AC0FC2C71EF86FBA0045A80D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2C41EF86FBA0045A80D /* Roboto-Italic.ttf */; };
+		AC0FC2C81EF86FBA0045A80D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2C51EF86FBA0045A80D /* Roboto-Medium.ttf */; };
+		AC0FC2C91EF86FBA0045A80D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC0FC2C61EF86FBA0045A80D /* Roboto-Regular.ttf */; };
+		AC0FC2CB1EF870770045A80D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2CA1EF870770045A80D /* Font.swift */; };
+		AC0FC2CD1EF873B50045A80D /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2CC1EF873B50045A80D /* Style.swift */; };
+		AC0FC2D21EF893DD0045A80D /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2D11EF893DD0045A80D /* LoginServiceProtocol.swift */; };
+		AC0FC2D51EF894290045A80D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2D41EF894290045A80D /* User.swift */; };
+		AC0FC2D71EF895350045A80D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2D61EF895350045A80D /* LoginService.swift */; };
+		AC0FC2D91EF89D280045A80D /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2D81EF89D280045A80D /* UserServiceProtocol.swift */; };
+		AC0FC2DB1EF89D6E0045A80D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2DA1EF89D6E0045A80D /* UserService.swift */; };
+		AC0FC2DE1EF89ECD0045A80D /* RSServiceHelper+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2DD1EF89ECD0045A80D /* RSServiceHelper+Headers.swift */; };
+		AC0FC2E11EF89EF10045A80D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2E01EF89EF10045A80D /* LoginManager.swift */; };
+		AC0FC2E51EF8A2AF0045A80D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FC2E41EF8A2AF0045A80D /* Company.swift */; };
+		AC83D53D1F01D30800CE8EB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83D53C1F01D30800CE8EB0 /* MainViewController.swift */; };
+		AC83D5421F01D88A00CE8EB0 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83D5411F01D88A00CE8EB0 /* MainDashboardViewController.swift */; };
+		AC83D5441F01D89500CE8EB0 /* MainTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83D5431F01D89500CE8EB0 /* MainTaskViewController.swift */; };
+		AC83D5461F01D89F00CE8EB0 /* MainRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83D5451F01D89F00CE8EB0 /* MainRequestViewController.swift */; };
+		AC83D54A1F01E09400CE8EB0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83D5481F01E09400CE8EB0 /* TaskCell.swift */; };
+		AC83D54B1F01E09400CE8EB0 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83D5491F01E09400CE8EB0 /* TaskCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0FC2A01EF86AAA0045A80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0FC2651EF86AAA0045A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0FC26C1EF86AAA0045A80D;
+			remoteInfo = gestta;
+		};
+		AC0FC2AB1EF86AAA0045A80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0FC2651EF86AAA0045A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0FC26C1EF86AAA0045A80D;
+			remoteInfo = gestta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BC61196E73A3EE9788F443C /* Pods-gesttaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gesttaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gesttaTests/Pods-gesttaTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FC5DD7D994214E4A578121B /* Pods-gestta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gestta/Pods-gestta.debug.xcconfig"; sourceTree = "<group>"; };
+		59D902E7E934F874C54AAD03 /* Pods_gesttaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gesttaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE5AF89E2D68DB29EAC31C8 /* Pods-gestta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gestta.release.xcconfig"; path = "Pods/Target Support Files/Pods-gestta/Pods-gestta.release.xcconfig"; sourceTree = "<group>"; };
+		934551E57CEFFBC3B85507EE /* Pods_gestta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gestta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35FE44F7F07003962A1C0B3 /* Pods-gesttaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gesttaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gesttaUITests/Pods-gesttaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A44BEBFF85D9B36B9DA96C5C /* Pods-gesttaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gesttaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gesttaUITests/Pods-gesttaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0FC26D1EF86AAA0045A80D /* gestta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0FC2741EF86AAA0045A80D /* StringIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIdentifier.swift; sourceTree = "<group>"; };
+		AC0FC2761EF86AAA0045A80D /* CollectionViewIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewIdentifier.swift; sourceTree = "<group>"; };
+		AC0FC2781EF86AAA0045A80D /* ControllerIndentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerIndentifier.swift; sourceTree = "<group>"; };
+		AC0FC27A1EF86AAA0045A80D /* ImageIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIdentifier.swift; sourceTree = "<group>"; };
+		AC0FC27C1EF86AAA0045A80D /* NibIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibIdentifier.swift; sourceTree = "<group>"; };
+		AC0FC27E1EF86AAA0045A80D /* TableViewIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIdentifier.swift; sourceTree = "<group>"; };
+		AC0FC2801EF86AAA0045A80D /* UserDefaultsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsIdentifiers.swift; sourceTree = "<group>"; };
+		AC0FC2891EF86AAA0045A80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0FC28F1EF86AAA0045A80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0FC2911EF86AAA0045A80D /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
+		AC0FC2931EF86AAA0045A80D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AC0FC2951EF86AAA0045A80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0FC2981EF86AAA0045A80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0FC29A1EF86AAA0045A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0FC29F1EF86AAA0045A80D /* gesttaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gesttaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0FC2A31EF86AAA0045A80D /* gesttaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gesttaTests.swift; sourceTree = "<group>"; };
+		AC0FC2A51EF86AAA0045A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0FC2AA1EF86AAA0045A80D /* gesttaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gesttaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0FC2AE1EF86AAA0045A80D /* gesttaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gesttaUITests.swift; sourceTree = "<group>"; };
+		AC0FC2B01EF86AAA0045A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0FC2BE1EF86B830045A80D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC0FC2C11EF86CFC0045A80D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC0FC2C41EF86FBA0045A80D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		AC0FC2C51EF86FBA0045A80D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		AC0FC2C61EF86FBA0045A80D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AC0FC2CA1EF870770045A80D /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		AC0FC2CC1EF873B50045A80D /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		AC0FC2D11EF893DD0045A80D /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
+		AC0FC2D41EF894290045A80D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC0FC2D61EF895350045A80D /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		AC0FC2D81EF89D280045A80D /* UserServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
+		AC0FC2DA1EF89D6E0045A80D /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AC0FC2DD1EF89ECD0045A80D /* RSServiceHelper+Headers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RSServiceHelper+Headers.swift"; sourceTree = "<group>"; };
+		AC0FC2E01EF89EF10045A80D /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		AC0FC2E41EF8A2AF0045A80D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		AC83D53C1F01D30800CE8EB0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AC83D5411F01D88A00CE8EB0 /* MainDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDashboardViewController.swift; sourceTree = "<group>"; };
+		AC83D5431F01D89500CE8EB0 /* MainTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTaskViewController.swift; sourceTree = "<group>"; };
+		AC83D5451F01D89F00CE8EB0 /* MainRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRequestViewController.swift; sourceTree = "<group>"; };
+		AC83D5481F01E09400CE8EB0 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		AC83D5491F01E09400CE8EB0 /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		B79F39CC462421AD644DB549 /* Pods_gesttaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gesttaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CFD854E7863995DF31D9E9 /* Pods-gesttaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gesttaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gesttaTests/Pods-gesttaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0FC26A1EF86AAA0045A80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B5BC398029A5DA97C4E0D8 /* Pods_gestta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC29C1EF86AAA0045A80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4546FC834A79DBF924779E5B /* Pods_gesttaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC2A71EF86AAA0045A80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B90F1A1E5780485F968287 /* Pods_gesttaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0FC2641EF86AAA0045A80D = {
+			isa = PBXGroup;
+			children = (
+				AC0FC26F1EF86AAA0045A80D /* gestta */,
+				AC0FC2A21EF86AAA0045A80D /* gesttaTests */,
+				AC0FC2AD1EF86AAA0045A80D /* gesttaUITests */,
+				AC0FC26E1EF86AAA0045A80D /* Products */,
+				CF0938D6A49A2DBADCC302E9 /* Pods */,
+				B756417AE28CFADBFCAEBEEB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0FC26E1EF86AAA0045A80D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC26D1EF86AAA0045A80D /* gestta.app */,
+				AC0FC29F1EF86AAA0045A80D /* gesttaTests.xctest */,
+				AC0FC2AA1EF86AAA0045A80D /* gesttaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0FC26F1EF86AAA0045A80D /* gestta */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2721EF86AAA0045A80D /* Models */,
+				AC0FC2821EF86AAA0045A80D /* Controllers */,
+				AC0FC2861EF86AAA0045A80D /* Views */,
+				AC0FC28B1EF86AAA0045A80D /* Resources */,
+				AC0FC28E1EF86AAA0045A80D /* Support Files */,
+			);
+			path = gestta;
+			sourceTree = "<group>";
+		};
+		AC0FC2721EF86AAA0045A80D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2DF1EF89EE10045A80D /* Managers */,
+				AC0FC2D31EF894190045A80D /* Database */,
+				AC0FC2CE1EF8932C0045A80D /* Restfull Services */,
+				AC0FC2731EF86AAA0045A80D /* Assets Custom Identifiers */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AC0FC2731EF86AAA0045A80D /* Assets Custom Identifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2741EF86AAA0045A80D /* StringIdentifier.swift */,
+				AC0FC2761EF86AAA0045A80D /* CollectionViewIdentifier.swift */,
+				AC0FC2781EF86AAA0045A80D /* ControllerIndentifier.swift */,
+				AC0FC27A1EF86AAA0045A80D /* ImageIdentifier.swift */,
+				AC0FC27C1EF86AAA0045A80D /* NibIdentifier.swift */,
+				AC0FC27E1EF86AAA0045A80D /* TableViewIdentifier.swift */,
+				AC0FC2801EF86AAA0045A80D /* UserDefaultsIdentifiers.swift */,
+			);
+			name = "Assets Custom Identifiers";
+			sourceTree = "<group>";
+		};
+		AC0FC2821EF86AAA0045A80D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC83D53B1F01D2DA00CE8EB0 /* Main */,
+				AC0FC2831EF86AAA0045A80D /* Login */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AC0FC2831EF86AAA0045A80D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2BE1EF86B830045A80D /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AC0FC2861EF86AAA0045A80D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC83D5471F01E06600CE8EB0 /* Cells */,
+				AC0FC2871EF86AAA0045A80D /* Storyboards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AC0FC2871EF86AAA0045A80D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2881EF86AAA0045A80D /* Main.storyboard */,
+				AC0FC2971EF86AAA0045A80D /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC0FC28B1EF86AAA0045A80D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2C31EF86F250045A80D /* Fonts */,
+				AC0FC2C01EF86CED0045A80D /* Styles */,
+				AC0FC2951EF86AAA0045A80D /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC0FC28E1EF86AAA0045A80D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC29A1EF86AAA0045A80D /* Info.plist */,
+				AC0FC28F1EF86AAA0045A80D /* AppDelegate.swift */,
+				AC0FC2911EF86AAA0045A80D /* AppConfig.plist */,
+				AC0FC2931EF86AAA0045A80D /* Localizable.strings */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		AC0FC2A21EF86AAA0045A80D /* gesttaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2A31EF86AAA0045A80D /* gesttaTests.swift */,
+				AC0FC2A51EF86AAA0045A80D /* Info.plist */,
+			);
+			path = gesttaTests;
+			sourceTree = "<group>";
+		};
+		AC0FC2AD1EF86AAA0045A80D /* gesttaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2AE1EF86AAA0045A80D /* gesttaUITests.swift */,
+				AC0FC2B01EF86AAA0045A80D /* Info.plist */,
+			);
+			path = gesttaUITests;
+			sourceTree = "<group>";
+		};
+		AC0FC2C01EF86CED0045A80D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2C11EF86CFC0045A80D /* Color.swift */,
+				AC0FC2CC1EF873B50045A80D /* Style.swift */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		AC0FC2C31EF86F250045A80D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2C41EF86FBA0045A80D /* Roboto-Italic.ttf */,
+				AC0FC2C51EF86FBA0045A80D /* Roboto-Medium.ttf */,
+				AC0FC2C61EF86FBA0045A80D /* Roboto-Regular.ttf */,
+				AC0FC2CA1EF870770045A80D /* Font.swift */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		AC0FC2CE1EF8932C0045A80D /* Restfull Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2DC1EF89EAB0045A80D /* Extensions */,
+				AC0FC2CF1EF893690045A80D /* Protocols */,
+				AC0FC2D01EF8936F0045A80D /* Services */,
+			);
+			name = "Restfull Services";
+			sourceTree = "<group>";
+		};
+		AC0FC2CF1EF893690045A80D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2D11EF893DD0045A80D /* LoginServiceProtocol.swift */,
+				AC0FC2D81EF89D280045A80D /* UserServiceProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AC0FC2D01EF8936F0045A80D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2D61EF895350045A80D /* LoginService.swift */,
+				AC0FC2DA1EF89D6E0045A80D /* UserService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AC0FC2D31EF894190045A80D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2D41EF894290045A80D /* User.swift */,
+				AC0FC2E41EF8A2AF0045A80D /* Company.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		AC0FC2DC1EF89EAB0045A80D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2DD1EF89ECD0045A80D /* RSServiceHelper+Headers.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AC0FC2DF1EF89EE10045A80D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FC2E01EF89EF10045A80D /* LoginManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		AC83D53B1F01D2DA00CE8EB0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AC83D53C1F01D30800CE8EB0 /* MainViewController.swift */,
+				AC83D5411F01D88A00CE8EB0 /* MainDashboardViewController.swift */,
+				AC83D5431F01D89500CE8EB0 /* MainTaskViewController.swift */,
+				AC83D5451F01D89F00CE8EB0 /* MainRequestViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		AC83D5471F01E06600CE8EB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC83D5481F01E09400CE8EB0 /* TaskCell.swift */,
+				AC83D5491F01E09400CE8EB0 /* TaskCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B756417AE28CFADBFCAEBEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934551E57CEFFBC3B85507EE /* Pods_gestta.framework */,
+				B79F39CC462421AD644DB549 /* Pods_gesttaTests.framework */,
+				59D902E7E934F874C54AAD03 /* Pods_gesttaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF0938D6A49A2DBADCC302E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FC5DD7D994214E4A578121B /* Pods-gestta.debug.xcconfig */,
+				7CE5AF89E2D68DB29EAC31C8 /* Pods-gestta.release.xcconfig */,
+				C2CFD854E7863995DF31D9E9 /* Pods-gesttaTests.debug.xcconfig */,
+				2BC61196E73A3EE9788F443C /* Pods-gesttaTests.release.xcconfig */,
+				A44BEBFF85D9B36B9DA96C5C /* Pods-gesttaUITests.debug.xcconfig */,
+				A35FE44F7F07003962A1C0B3 /* Pods-gesttaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0FC26C1EF86AAA0045A80D /* gestta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0FC2B31EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gestta" */;
+			buildPhases = (
+				FBA284D89BB465F7356930CE /* [CP] Check Pods Manifest.lock */,
+				AC0FC2691EF86AAA0045A80D /* Sources */,
+				AC0FC26A1EF86AAA0045A80D /* Frameworks */,
+				AC0FC26B1EF86AAA0045A80D /* Resources */,
+				9FD7B58B43C4535420FAB270 /* [CP] Embed Pods Frameworks */,
+				FDAB72AAE1144062A359D052 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gestta;
+			productName = gestta;
+			productReference = AC0FC26D1EF86AAA0045A80D /* gestta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0FC29E1EF86AAA0045A80D /* gesttaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0FC2B61EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gesttaTests" */;
+			buildPhases = (
+				73FFDFF7F752688A9BE6DBBC /* [CP] Check Pods Manifest.lock */,
+				AC0FC29B1EF86AAA0045A80D /* Sources */,
+				AC0FC29C1EF86AAA0045A80D /* Frameworks */,
+				AC0FC29D1EF86AAA0045A80D /* Resources */,
+				8B3F6351DCDA6F26A6E96934 /* [CP] Embed Pods Frameworks */,
+				BA31D111923C5F0F4CC15612 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0FC2A11EF86AAA0045A80D /* PBXTargetDependency */,
+			);
+			name = gesttaTests;
+			productName = gesttaTests;
+			productReference = AC0FC29F1EF86AAA0045A80D /* gesttaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0FC2A91EF86AAA0045A80D /* gesttaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0FC2B91EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gesttaUITests" */;
+			buildPhases = (
+				7978439E5FB2C2841463CAB2 /* [CP] Check Pods Manifest.lock */,
+				AC0FC2A61EF86AAA0045A80D /* Sources */,
+				AC0FC2A71EF86AAA0045A80D /* Frameworks */,
+				AC0FC2A81EF86AAA0045A80D /* Resources */,
+				FB52AB1EB35F6A49A63478A5 /* [CP] Embed Pods Frameworks */,
+				24EDDF9F8DC0EDD487637FD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0FC2AC1EF86AAA0045A80D /* PBXTargetDependency */,
+			);
+			name = gesttaUITests;
+			productName = gesttaUITests;
+			productReference = AC0FC2AA1EF86AAA0045A80D /* gesttaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0FC2651EF86AAA0045A80D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = redspark;
+				TargetAttributes = {
+					AC0FC26C1EF86AAA0045A80D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HLMJKTG63W;
+						ProvisioningStyle = Automatic;
+					};
+					AC0FC29E1EF86AAA0045A80D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HLMJKTG63W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0FC26C1EF86AAA0045A80D;
+					};
+					AC0FC2A91EF86AAA0045A80D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HLMJKTG63W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0FC26C1EF86AAA0045A80D;
+					};
+				};
+			};
+			buildConfigurationList = AC0FC2681EF86AAA0045A80D /* Build configuration list for PBXProject "gestta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0FC2641EF86AAA0045A80D;
+			productRefGroup = AC0FC26E1EF86AAA0045A80D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0FC26C1EF86AAA0045A80D /* gestta */,
+				AC0FC29E1EF86AAA0045A80D /* gesttaTests */,
+				AC0FC2A91EF86AAA0045A80D /* gesttaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0FC26B1EF86AAA0045A80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FC2941EF86AAA0045A80D /* Localizable.strings in Resources */,
+				AC83D54B1F01E09400CE8EB0 /* TaskCell.xib in Resources */,
+				AC0FC2C71EF86FBA0045A80D /* Roboto-Italic.ttf in Resources */,
+				AC0FC2C91EF86FBA0045A80D /* Roboto-Regular.ttf in Resources */,
+				AC0FC2921EF86AAA0045A80D /* AppConfig.plist in Resources */,
+				AC0FC2C81EF86FBA0045A80D /* Roboto-Medium.ttf in Resources */,
+				AC0FC2991EF86AAA0045A80D /* LaunchScreen.storyboard in Resources */,
+				AC0FC2961EF86AAA0045A80D /* Assets.xcassets in Resources */,
+				AC0FC28A1EF86AAA0045A80D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC29D1EF86AAA0045A80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC2A81EF86AAA0045A80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24EDDF9F8DC0EDD487637FD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gesttaUITests/Pods-gesttaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73FFDFF7F752688A9BE6DBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7978439E5FB2C2841463CAB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3F6351DCDA6F26A6E96934 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gesttaTests/Pods-gesttaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD7B58B43C4535420FAB270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta/Pods-gestta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA31D111923C5F0F4CC15612 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gesttaTests/Pods-gesttaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB52AB1EB35F6A49A63478A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gesttaUITests/Pods-gesttaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA284D89BB465F7356930CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDAB72AAE1144062A359D052 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gestta/Pods-gestta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0FC2691EF86AAA0045A80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC83D53D1F01D30800CE8EB0 /* MainViewController.swift in Sources */,
+				AC0FC2BF1EF86B830045A80D /* LoginViewController.swift in Sources */,
+				AC0FC2CB1EF870770045A80D /* Font.swift in Sources */,
+				AC0FC2811EF86AAA0045A80D /* UserDefaultsIdentifiers.swift in Sources */,
+				AC0FC2E51EF8A2AF0045A80D /* Company.swift in Sources */,
+				AC0FC2751EF86AAA0045A80D /* StringIdentifier.swift in Sources */,
+				AC0FC2C21EF86CFC0045A80D /* Color.swift in Sources */,
+				AC83D5461F01D89F00CE8EB0 /* MainRequestViewController.swift in Sources */,
+				AC0FC2771EF86AAA0045A80D /* CollectionViewIdentifier.swift in Sources */,
+				AC83D5421F01D88A00CE8EB0 /* MainDashboardViewController.swift in Sources */,
+				AC0FC2DB1EF89D6E0045A80D /* UserService.swift in Sources */,
+				AC0FC2D91EF89D280045A80D /* UserServiceProtocol.swift in Sources */,
+				AC0FC2D51EF894290045A80D /* User.swift in Sources */,
+				AC83D5441F01D89500CE8EB0 /* MainTaskViewController.swift in Sources */,
+				AC0FC2D71EF895350045A80D /* LoginService.swift in Sources */,
+				AC0FC2901EF86AAA0045A80D /* AppDelegate.swift in Sources */,
+				AC0FC2DE1EF89ECD0045A80D /* RSServiceHelper+Headers.swift in Sources */,
+				AC0FC2CD1EF873B50045A80D /* Style.swift in Sources */,
+				AC0FC27F1EF86AAA0045A80D /* TableViewIdentifier.swift in Sources */,
+				AC83D54A1F01E09400CE8EB0 /* TaskCell.swift in Sources */,
+				AC0FC27B1EF86AAA0045A80D /* ImageIdentifier.swift in Sources */,
+				AC0FC2791EF86AAA0045A80D /* ControllerIndentifier.swift in Sources */,
+				AC0FC2E11EF89EF10045A80D /* LoginManager.swift in Sources */,
+				AC0FC2D21EF893DD0045A80D /* LoginServiceProtocol.swift in Sources */,
+				AC0FC27D1EF86AAA0045A80D /* NibIdentifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC29B1EF86AAA0045A80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FC2A41EF86AAA0045A80D /* gesttaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FC2A61EF86AAA0045A80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FC2AF1EF86AAA0045A80D /* gesttaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0FC2A11EF86AAA0045A80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0FC26C1EF86AAA0045A80D /* gestta */;
+			targetProxy = AC0FC2A01EF86AAA0045A80D /* PBXContainerItemProxy */;
+		};
+		AC0FC2AC1EF86AAA0045A80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0FC26C1EF86AAA0045A80D /* gestta */;
+			targetProxy = AC0FC2AB1EF86AAA0045A80D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0FC2881EF86AAA0045A80D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0FC2891EF86AAA0045A80D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0FC2971EF86AAA0045A80D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0FC2981EF86AAA0045A80D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC0FC2B11EF86AAA0045A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC0FC2B21EF86AAA0045A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0FC2B41EF86AAA0045A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC5DD7D994214E4A578121B /* Pods-gestta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gestta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gestta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC0FC2B51EF86AAA0045A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE5AF89E2D68DB29EAC31C8 /* Pods-gestta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gestta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gestta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AC0FC2B71EF86AAA0045A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CFD854E7863995DF31D9E9 /* Pods-gesttaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gesttaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gesttaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestta.app/gestta";
+			};
+			name = Debug;
+		};
+		AC0FC2B81EF86AAA0045A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC61196E73A3EE9788F443C /* Pods-gesttaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gesttaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gesttaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestta.app/gestta";
+			};
+			name = Release;
+		};
+		AC0FC2BA1EF86AAA0045A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44BEBFF85D9B36B9DA96C5C /* Pods-gesttaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gesttaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gesttaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gestta;
+			};
+			name = Debug;
+		};
+		AC0FC2BB1EF86AAA0045A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35FE44F7F07003962A1C0B3 /* Pods-gesttaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HLMJKTG63W;
+				INFOPLIST_FILE = gesttaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.redspark.gesttaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gestta;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0FC2681EF86AAA0045A80D /* Build configuration list for PBXProject "gestta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FC2B11EF86AAA0045A80D /* Debug */,
+				AC0FC2B21EF86AAA0045A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0FC2B31EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gestta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FC2B41EF86AAA0045A80D /* Debug */,
+				AC0FC2B51EF86AAA0045A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0FC2B61EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gesttaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FC2B71EF86AAA0045A80D /* Debug */,
+				AC0FC2B81EF86AAA0045A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0FC2B91EF86AAA0045A80D /* Build configuration list for PBXNativeTarget "gesttaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FC2BA1EF86AAA0045A80D /* Debug */,
+				AC0FC2BB1EF86AAA0045A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0FC2651EF86AAA0045A80D /* Project object */;
+}

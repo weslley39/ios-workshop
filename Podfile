@@ -5,17 +5,20 @@ platform :ios, '9.0'
 use_frameworks!
 inhibit_all_warnings!
 
-target 'gestta2' do
+target 'gestta' do
     
     # Internal libs
     pod 'RSStarterKit'
     pod 'RSWidgets'
+    
+    # Android TabBar
+    pod 'ScrollPager', '~> 0.9'
 
-    target 'gestta2Tests' do
+    target 'gesttaTests' do
         inherit! :search_paths
     end
 
-    target 'gestta2UITests' do
+    target 'gesttaUITests' do
         inherit! :search_paths
     end
 
